@@ -1,0 +1,8 @@
+---
+name: assume
+description: Assume roles more easily in AWS
+install:
+  virtualenv: venv
+  pip-requirements: requirements.txt
+scripts:
+  assume: bin/assume
