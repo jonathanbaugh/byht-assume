@@ -5,4 +5,4 @@ install:
   virtualenv: venv
   pip-requirements: requirements.txt
 scripts:
-  assume: bin/assume
+  assume: bin/assume.sh

@@ -1,6 +1,10 @@
 #!/usr/bin/env sh
 
-BASEDIR=$(dirname $0)
-PYTHON_PATH=$BASEDIR/../venv/bin/python3
+PYTHON_PATH=$BYHT_DIR_CACHE/assume/venv/bin/python3
 
-$($PYTHON_PATH $BASEDIR/../assume.py $@)
+
+if [[ $@ == *"--help"* ]]; then
+  $PYTHON_PATH $BYHT_DIR_CACHE/assume/assume.py $@
+else
+  $($PYTHON_PATH $BYHT_DIR_CACHE/assume/assume.py $@)
+fi
